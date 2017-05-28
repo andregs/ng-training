@@ -1,0 +1,18 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "eslint.enable": false,
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true
+  },
+  "git.confirmSync": false,
+  "javascript.validate.enable": false,
+  "tsimporter.filesToExclude": [
+    "./dist/**"
+  ],
+  "workbench.iconTheme": "vs-seti"
+}

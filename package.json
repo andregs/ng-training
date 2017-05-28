@@ -1,0 +1,35 @@
+{
+  "name": "ng-training",
+  "version": "0.0.1",
+  "description": "Hands-on training in JavaScript, TypeScript & Angular",
+  "author": "André Gomes <andregs@gmail.com> (https://github.com/andregs/)",
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "eslint src/0-js",
+    "game": "node src/0-js/0.14.equality.js"
+  },
+  "private": true,
+  "homepage": "https://github.com/andregs/ng-training#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andregs/ng-training.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andregs/ng-training/issues"
+  },
+  "devDependencies": {
+    "@types/node": "7.0.22",
+    "eslint": "3.19.0",
+    "prompt": "1.0.0",
+    "ts-node": "3.0.4",
+    "typescript": "2.3.3"
+  },
+  "keywords": [
+    "training",
+    "course",
+    "tutorial",
+    "JavaScript",
+    "TypeScript",
+    "Angular"
+  ]
+}
