@@ -17,8 +17,8 @@ const expressions = [
   '[1, 2, 3] == [1, 2, 3]',
   '[1, 2, 3] == "1,2,3"',
   '2 == [2]',
-  '0 == "  "',
   '0 == ""',
+  '0 == "  "',
   '"  " == ""',
   'undefined == null',
   'typeof NaN == "number"',
@@ -65,7 +65,7 @@ prompt.get(schema, function (err, guesses) {
 
   let message;
   if (score >= 85) {
-    message = colors.green(percent) + ' - Well done!';
+    message = colors.green(percent) + ' - Congratulations!';
   } else if (score >= 70) {
     message = colors.yellow(percent) + ' - You can do better.';
   } else {
