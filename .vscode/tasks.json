@@ -9,11 +9,11 @@
   "suppressTaskName": true,
   "tasks": [
     {
-      "taskName": "install",
+      "taskName": "Install NPM dependencies",
       "args": ["install"]
     },
     {
-      "taskName": "lint",
+      "taskName": "Lint code",
       "args": ["run", "-s", "lint"]
     },
     {
