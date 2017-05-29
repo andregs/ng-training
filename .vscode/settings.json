@@ -11,8 +11,7 @@
   },
   "git.confirmSync": false,
   "javascript.validate.enable": false,
-  "tsimporter.filesToExclude": [
-    "./dist/**"
-  ],
+  "tsimporter.noStatusBar": true,
+  "typescript.tsdk": "node_modules/typescript/lib/",
   "workbench.iconTheme": "vs-seti"
 }

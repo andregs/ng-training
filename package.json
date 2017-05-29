@@ -5,7 +5,9 @@
   "author": "André Gomes <andregs@gmail.com> (https://github.com/andregs/)",
   "license": "Apache-2.0",
   "scripts": {
-    "lint": "eslint src/0-js",
+    "lint": "run-p -s lint:*",
+    "lint:js": "eslint src/0-js",
+    "lint:ts": "tslint src/1-ts/**",
     "game": "node src/0-js/0.14.equality.js"
   },
   "private": true,
@@ -20,8 +22,10 @@
   "devDependencies": {
     "@types/node": "7.0.22",
     "eslint": "3.19.0",
+    "npm-run-all": "4.0.2",
     "prompt": "1.0.0",
     "ts-node": "3.0.4",
+    "tslint": "5.3.2",
     "typescript": "2.3.3"
   },
   "keywords": [
