@@ -19,14 +19,18 @@
   "bugs": {
     "url": "https://github.com/andregs/ng-training/issues"
   },
-  "devDependencies": {
-    "@types/node": "7.0.22",
-    "eslint": "3.19.0",
-    "npm-run-all": "4.0.2",
+  "dependencies": {
+    "colors": "1.1.2",
     "prompt": "1.0.0",
-    "ts-node": "3.0.4",
-    "tslint": "5.3.2",
-    "typescript": "2.3.3"
+    "tslib": "1.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "7.0.31",
+    "eslint": "4.0.0",
+    "npm-run-all": "4.0.2",
+    "ts-node": "3.0.6",
+    "tslint": "5.4.3",
+    "typescript": "2.3.4"
   },
   "keywords": [
     "training",
