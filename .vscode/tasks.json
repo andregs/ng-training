@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "command": "npm",
   "isShellCommand": true,
-  "_runner": "terminal",
+  "runner": "terminal",
   "showOutput": "always",
   "suppressTaskName": true,
   "tasks": [
