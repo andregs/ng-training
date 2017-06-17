@@ -9,6 +9,7 @@
     "**/.git": true,
     "**/.DS_Store": true
   },
+  "files.trimTrailingWhitespace": true,
   "git.confirmSync": false,
   "javascript.validate.enable": false,
   "tsimporter.noStatusBar": true,

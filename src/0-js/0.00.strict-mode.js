@@ -2,7 +2,7 @@
  * Welcome to this training!
  * Before you proceed, did you follow the instructions on the README file?
  * Alright, then.
- * 
+ *
  * In this course I assume that you are already familiar with the basics of JavaScript.
  * But there may be some important concepts that you still don't know. Let's start with them.
  */

@@ -3,7 +3,7 @@
 var x = 008;
 var y = 009;
 var z = 010;
- 
+
 console.log(x, y, z);
 
 // strict: SyntaxError: Octal literals are not allowed in strict mode.

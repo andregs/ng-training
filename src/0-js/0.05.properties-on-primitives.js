@@ -1,7 +1,7 @@
 // You cannot set properties on primitive values.
 
 // "use strict";
- 
+
 var foo = 'foo';
 foo.bar = 'bar';
 
