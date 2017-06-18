@@ -26,7 +26,8 @@ let human: Human = charlie;
 pet = charlie; // Charlie doesn't look like a Pet
 human = eek; // but Eek looks like a human!
 
-// it can get weirder:
+// The following classes One and Two have no relationship between each other
+// but they are compatible because they have the same structure
 
 class One {
   value: string;
@@ -38,7 +39,7 @@ class One {
 }
 
 class Two {
-  value: string;
+  value = 'whatever';
 
   foo(x: number, y: number): string {
     return 'the sum is ' + (x + y);
@@ -50,5 +51,52 @@ let weird: One;
 weird = new One();
 weird = new Two(); // wait... what!?
 
-// classes One and Two have no relationship between each other
-// but they are compatible because they have the same structure
+// Even though you can assign a value to a compatible type,
+// you have not "changed" its type.
+
+class Animal { name: string; }
+class Employee { name: string; job: string; }
+class Mary extends Employee {
+  scream() {/* AAAH! */}
+}
+
+let animal: Animal;
+
+animal = new Animal();
+console.log(animal instanceof Animal); // true
+
+animal = { name: 'foo' };
+console.log(animal instanceof Animal, animal instanceof Object); // false true
+
+animal = new Employee();
+console.log(
+  animal instanceof Animal,
+  animal instanceof Object,
+  animal instanceof Employee,
+); // false true true
+
+animal = new Mary();
+console.log(
+  animal instanceof Animal,
+  animal instanceof Object,
+  animal instanceof Employee,
+  animal instanceof Mary,
+); // false true true true
+
+// examples of type guards:
+
+function test(something: any): any {
+  if (typeof something === 'number') {
+    const binaryString = something.toString(2);
+    return binaryString;
+  } else if (something instanceof Animal) {
+    something.name = 'Dog';
+    something.job = 'Pee'; // animals don't have job
+  } else if (something instanceof Employee) {
+    something.job = 'Engineer';
+    something.scream(); // employees don't screm
+  } else if (something.scream) {
+    something.scream(); // I may not be Mary ;)
+  }
+  return something;
+}

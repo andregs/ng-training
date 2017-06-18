@@ -14,3 +14,7 @@ const label = Options[2];
 const value = Options.Two;
 
 console.log(label, value, Options[label], Options[value]); // Two 2 2 Two
+
+let color: Color;
+color = Color.Red;
+color = 3413124; // surprise! =/
