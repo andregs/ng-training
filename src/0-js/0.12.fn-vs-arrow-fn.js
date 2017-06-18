@@ -6,7 +6,7 @@ console.log(foo()); // it logs "foo"
 var foo = () => 'foo';
 console.log(foo()); // it logs "foo"
 
-// It seems a shorter version of the same, uh?
+// The arrow fn seems just a shorter version of the regular fn, doesn't it?
 // But notice "how JS translates" the arrow function:
 
 function foo() { return 'foo'; }

@@ -5,7 +5,7 @@
 var foo = 'foo';
 foo.bar = 'bar';
 
-console.log(foo);
+console.log(foo, foo.bar);
 
 // strict: TypeError: Cannot create property 'bar' on string 'foo'
-// default: it logs 'foo' (assignment is ignored)
+// default: it logs 'foo undefined' (assignment is ignored)

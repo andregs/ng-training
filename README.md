@@ -3,12 +3,12 @@
 Support files for my hands-on training on JavaScript, TypeScript & Angular.
 
 ## Prerequisites
-1. Install [Node.js 7](https://nodejs.org/en/download/current/).
+1. Install [Node.js](https://nodejs.org/en/download/current/).
 1. Install [MS VSCode](https://code.visualstudio.com/Download).
-1. Clone this repo.
+1. Fork this repo.
 1. `npm install`
 
-Then you can start the course by opening this directory in VSCode.
+Then you can start the course by opening this project in VSCode.
 
 VSCode will ask you to install some recommended extensions. Accept it.
 

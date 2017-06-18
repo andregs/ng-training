@@ -75,7 +75,7 @@ prompt.get(schema, function (err, guesses) {
   console.log('\nScore: ' + message);
   console.log('\nI hope you learned why you should always compare with === instead of ==');
   console.log('And forbid loose comparison via linter!');
-  console.log('\nWhile you are here, notice that these are always falsy/else conditions:');
+  console.log('\nWhile you are here, notice that these are always falsy/else values:');
   console.log('false, undefined, null, 0, "", NaN');
   console.log('\nAny other value is truthy/if.');
   console.log(colors.cyan('\nThank you for playing The Loose Equality Game!'));
