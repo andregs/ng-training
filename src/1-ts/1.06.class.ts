@@ -35,6 +35,9 @@ class Bar extends Foo {
   }
 }
 
+// there's also 'static', 'abstract' and 'super'
+// with no big surprises for a Java programmer
+
 // getters & setters
 
 class Name {
@@ -49,22 +52,41 @@ class Name {
     // this.last = last;
   }
 
-  get fullName() { return `${this.first} ${this.last}`; }
-}
+  get fullName() {
+    return `${this.first} ${this.last}`;
+  }
 
-const johnDoe = new Name('John', 'Doe');
-console.log(johnDoe.fullName); // John Doe
-johnDoe.fullName = 'Santa Claus'; // we have no setter yet
-
-class Name2 extends Name {
   set fullName(full: string) {
     [this.first, this.last] = full.split(' ');
   }
 }
 
-let spiderman = new Name2('Peter', 'wrong');
-spiderman.fullName = 'Peter Parker';
-console.log(spiderman.first === 'Peter', spiderman.last === 'Parker');
+const johnDoe = new Name('John', 'Doe');
+console.log(johnDoe.fullName); // John Doe
 
-// there's also 'static', 'abstract' and 'super'
-// with no big surprises for a Java programmer
+let spiderman = new Name('Peter', 'wrong');
+spiderman.fullName = 'Peter Parker';
+console.log(spiderman.first === 'Peter', spiderman.last === 'Parker'); // true true
+
+// remember "this"?
+
+class Handler {
+  info: string;
+  onClickOne(e: Event) { this.info = e.target['value']; }
+  onClickTwo = (e: Event) => { this.info = e.target['value']; };
+}
+
+let handler = new Handler();
+let button: HTMLButtonElement = new HTMLButtonElement();
+
+// 'this' is undefined when the button calls our handler
+button.addEventListener('click', handler.onClickOne); // error!
+
+// 'this' is now properly bound
+button.addEventListener('click', handler.onClickOne.bind(handler)); // ok
+button.addEventListener('click', handler.onClickTwo); // ok
+
+// onClickOne is a method and onClickTwo is an attribute.
+// One instance of the arrow function is created per object of type Handler.
+// On the other hand the method is created once and attached to Handler's prototype.
+// Methods are shared between all objects of type Handler.
