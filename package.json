@@ -5,19 +5,12 @@
   "author": "André Gomes <andregs@gmail.com> (https://github.com/andregs/)",
   "license": "Apache-2.0",
   "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
     "lint": "run-p -s lint:*",
     "lint:js": "eslint src/0-js",
     "lint:ts": "tslint src/1-ts/**",
     "game": "node src/0-js/0.14.equality.js"
-  },
-  "private": true,
-  "homepage": "https://github.com/andregs/ng-training#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andregs/ng-training.git"
-  },
-  "bugs": {
-    "url": "https://github.com/andregs/ng-training/issues"
   },
   "dependencies": {
     "colors": "1.1.2",
@@ -28,9 +21,19 @@
     "@types/node": "7.0.31",
     "eslint": "4.0.0",
     "npm-run-all": "4.0.2",
-    "ts-node": "3.0.6",
+    "rimraf": "2.6.1",
     "tslint": "5.4.3",
+    "tslint-language-service": "0.9.6",
     "typescript": "2.3.4"
+  },
+  "private": true,
+  "homepage": "https://github.com/andregs/ng-training#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andregs/ng-training.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andregs/ng-training/issues"
   },
   "keywords": [
     "training",

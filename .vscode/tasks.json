@@ -9,16 +9,21 @@
   "suppressTaskName": true,
   "tasks": [
     {
+      "taskName": "Build TS Code",
+      "args": ["run", "build"]
+    },
+    {
       "taskName": "Install NPM dependencies",
-      "args": ["install"]
+      "args": ["install"],
+      "isBuildCommand": true
     },
     {
       "taskName": "Lint code",
-      "args": ["run", "-s", "lint"]
+      "args": ["run", "lint"]
     },
     {
       "taskName": "The Loose Equality Game",
-      "args": ["run", "-s", "game"]
+      "args": ["run", "game"]
     }
   ]
 }
