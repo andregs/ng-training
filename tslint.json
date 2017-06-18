@@ -5,10 +5,15 @@
   "rules": {
     "eofline": false,
     "interface-name": false,
+    "max-classes-per-file": false,
+    "member-access": false,
+    "member-ordering": false,
     "no-consecutive-blank-lines": false,
     "no-console": [false],
+    "no-empty-interface": false,
     "no-string-literal": false,
     "no-var-keyword": false,
+    "object-literal-sort-keys": false,
     "only-arrow-functions": false,
     "quotemark": [false]
   }
