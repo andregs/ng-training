@@ -3,6 +3,7 @@
     "tslint:recommended"
   ],
   "rules": {
+    "arrow-parens": false,
     "curly": false,
     "eofline": false,
     "import-blacklist": [true, "rxjs"],
