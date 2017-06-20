@@ -35,3 +35,6 @@ Have fun!
 The `module` field convention on `package.json`
 - https://github.com/rollup/rollup/wiki/pkg.module
 - https://hackernoon.com/node-js-tc-39-and-modules-a1118aecf95e
+
+How promises help to solve the trust issues with callbacks-only coding:
+- [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch3.md#promise-trust) <- great eBook series, by the way.

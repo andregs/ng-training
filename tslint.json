@@ -19,6 +19,7 @@
     "object-literal-sort-keys": false,
     "only-arrow-functions": [false],
     "ordered-imports": [false],
-    "quotemark": [false]
+    "quotemark": [false],
+    "trailing-comma": [false]
   }
 }
