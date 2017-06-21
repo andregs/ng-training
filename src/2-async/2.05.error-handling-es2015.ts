@@ -1,4 +1,4 @@
-function play() {
+export function play(): Promise<void> {
   return Promise.resolve(Math.floor(Math.random() * 10))
     .then(val => {
       if (val < 3) throw new Error('too small');
@@ -17,6 +17,8 @@ function play() {
 }
 
 play().then(play).then(play).then(play);
+
+console.log('Is this printed before/during/after the promise chain?');
 
 // 'then' accepts a second argument which is an error handler,
 // but forget about it!

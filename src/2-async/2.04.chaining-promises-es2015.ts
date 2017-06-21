@@ -1,4 +1,6 @@
-import { wearBombs, goLunch, orderBigMac, eat, boom } from "./2.03.evil-plan";
+import {
+  wearBombs, goLunch, orderBigMac, eat, boom
+} from "./2.03.evil-plan-es2015";
 
 // proper way of chaining
 wearBombs()

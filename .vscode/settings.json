@@ -7,7 +7,7 @@
   "files.eol": "\n",
   "javascript.validate.enable": false,
   "tsimporter.noStatusBar": true,
-  "tslint.enable": false,
+  "tslint.enable": true,
   "typescript.tsdk": "node_modules/typescript/lib/",
   "workbench.iconTheme": "material-icon-theme"
 }

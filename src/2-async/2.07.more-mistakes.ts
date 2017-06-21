@@ -1,4 +1,4 @@
-import { wait, wearBombs, goLunch, orderBigMac } from "./2.03.evil-plan";
+import { wait, wearBombs, goLunch, orderBigMac } from "./2.03.evil-plan-es2015";
 
 // waiting for a bunch of Promises
 
