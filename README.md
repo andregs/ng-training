@@ -23,16 +23,23 @@ Have fun!
 #### Tools
 - TypeScript Types Search: https://aka.ms/types
 - VS Code Tips & Tricks: https://github.com/Microsoft/vscode-tips-and-tricks
+- Rx Visualizer: https://rxviz.com
+- Angular CLI: https://cli.angular.io
 
 #### What's New
+
+You really should keep an eye on these, since things move fast in this realm:
+
 - VS Code: https://code.visualstudio.com/updates
 - TypeScript: https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript
+- Angular CLI: https://github.com/angular/angular-cli/releases
+- Angular: https://github.com/angular/angular/blob/master/CHANGELOG.md
 
 #### Documentation
 - TypeScript: https://www.typescriptlang.org/docs/home.html
 - VS Code: https://code.visualstudio.com/docs
 - RxJS: http://reactivex.io/rxjs/
-- MDN: https://developer.mozilla.org/en-US/
+- Angular: https://angular.io/docs
 
 The `module` field convention on `package.json`
 - https://github.com/rollup/rollup/wiki/pkg.module

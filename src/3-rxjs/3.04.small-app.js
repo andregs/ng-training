@@ -85,3 +85,6 @@ click$ = Rx.Observable
     e => console.error('Oops!', e),
     () => console.warn('The end.'),
   );
+
+// Browse the links on the README file to learn more about RxJS.
+// There's much more to learn beyond what's been presented here.
