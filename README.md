@@ -25,6 +25,7 @@ Have fun!
 - VS Code Tips & Tricks: https://github.com/Microsoft/vscode-tips-and-tricks
 - Rx Visualizer: https://rxviz.com
 - Angular CLI: https://cli.angular.io
+- ngx-bootstrap: http://valor-software.com/ngx-bootstrap/
 
 #### What's New
 
@@ -40,6 +41,7 @@ You really should keep an eye on these, since things move fast in this realm:
 - VS Code: https://code.visualstudio.com/docs
 - RxJS: http://reactivex.io/rxjs/
 - Angular: https://angular.io/docs
+- Bootstrap: https://v4-alpha.getbootstrap.com/getting-started/introduction/
 
 The `module` field convention on `package.json`
 - https://github.com/rollup/rollup/wiki/pkg.module
